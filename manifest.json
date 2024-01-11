@@ -1,6 +1,6 @@
 {
-  "name": "UMKM APINDO POS",
-  "short_name": "UMKM APINDO POS",
+  "name": "SalePro",
+  "short_name": "SalePro",
   "start_url": "/salepro/",
   "background_color": "#fff",
   "display": "standalone",
