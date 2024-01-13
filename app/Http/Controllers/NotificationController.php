@@ -38,7 +38,7 @@ class NotificationController extends Controller
                 return redirect()->back()->withErrors($v->errors());
 
             $documentName = date('Ymdhis').'.'.$document->getClientOriginalExtension();
-            $document->move('public/documents/notification', $documentName);
+            $document->move('documents/notification', $documentName);
             $request->document_name = $documentName;
         }
     	$user = User::find($request->receiver_id);

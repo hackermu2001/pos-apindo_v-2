@@ -126,7 +126,7 @@ class AdjustmentController extends Controller
         $document = $request->document;
         if ($document) {
             $documentName = $document->getClientOriginalName();
-            $document->move('public/documents/adjustment', $documentName);
+            $document->move('documents/adjustment', $documentName);
             $data['document'] = $documentName;
         }
         $lims_adjustment_data = Adjustment::create($data);
@@ -202,7 +202,7 @@ class AdjustmentController extends Controller
             $this->fileDelete('documents/adjustment/', $lims_adjustment_data->document);
 
             $documentName = $document->getClientOriginalName();
-            $document->move('public/documents/adjustment', $documentName);
+            $document->move('documents/adjustment', $documentName);
             $data['document'] = $documentName;
         }
 

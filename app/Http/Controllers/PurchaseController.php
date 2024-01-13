@@ -420,11 +420,11 @@ class PurchaseController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             $data['document'] = $documentName;
         }
@@ -694,11 +694,11 @@ class PurchaseController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             $data['document'] = $documentName;
         }
@@ -816,11 +816,11 @@ class PurchaseController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             $data['document'] = $documentName;
         }
@@ -1437,11 +1437,11 @@ class PurchaseController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/purchase', $documentName);
+                $document->move('documents/purchase', $documentName);
             }
             $data['document'] = $documentName;
         }

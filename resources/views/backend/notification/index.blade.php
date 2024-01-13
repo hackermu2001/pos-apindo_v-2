@@ -39,7 +39,7 @@
                     <td>{{$from_user->name}}</td>
                     <td>{{$to_user->name}}</td>
                     @if($data->document_name)
-                    <td><a target="_blank" href="{{url('public/documents/notification', $data->document_name)}}">Open</a>
+                    <td><a target="_blank" href="{{url('documents/notification', $data->document_name)}}">Open</a>
                     </td>
                     @else
                     <td>N/A</td>

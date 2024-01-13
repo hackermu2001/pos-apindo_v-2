@@ -472,11 +472,11 @@ class SaleController extends Controller
                 $documentName = date("Ymdhis");
                 if(!config('database.connections.saleprosaas_landlord')) {
                     $documentName = $documentName . '.' . $ext;
-                    $document->move('public/documents/sale', $documentName);
+                    $document->move('documents/sale', $documentName);
                 }
                 else {
                     $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                    $document->move('public/documents/sale', $documentName);
+                    $document->move('documents/sale', $documentName);
                 }
                 $data['document'] = $documentName;
             }
@@ -1688,11 +1688,11 @@ class SaleController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/sale', $documentName);
+                $document->move('documents/sale', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/sale', $documentName);
+                $document->move('documents/sale', $documentName);
             }
             $data['document'] = $documentName;
         }
@@ -1835,11 +1835,11 @@ class SaleController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/sale', $documentName);
+                $document->move('documents/sale', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/sale', $documentName);
+                $document->move('documents/sale', $documentName);
             }
             $data['document'] = $documentName;
         }

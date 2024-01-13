@@ -264,7 +264,7 @@
                         @foreach(\Auth::user()->unreadNotifications->where('data.reminder_date', date('Y-m-d')) as $key => $notification)
                             <li class="notifications">
                                 @if($notification->data['document_name'])
-                                <a target="_blank" href="{{url('public/documents/notification', $notification->data['document_name'])}}" class="btn btn-link">{{ $notification->data['message'] }}</a>
+                                <a target="_blank" href="{{url('documents/notification', $notification->data['document_name'])}}" class="btn btn-link">{{ $notification->data['message'] }}</a>
                                 @else
                                 <a href="#" class="btn btn-link">{{ $notification->data['message'] }}</a>
                                 @endif
@@ -281,7 +281,7 @@
                         @foreach(\Auth::user()->unreadNotifications->where('data.reminder_date', date('Y-m-d')) as $key => $notification)
                             <li class="notifications">
                                 @if($notification->data['document_name'])
-                                <a target="_blank" href="{{url('public/documents/notification', $notification->data['document_name'])}}" class="btn btn-link">{{ $notification->data['message'] }}</a>
+                                <a target="_blank" href="{{url('documents/notification', $notification->data['document_name'])}}" class="btn btn-link">{{ $notification->data['message'] }}</a>
                                 @else
                                 <a href="#" class="btn btn-link">{{ $notification->data['message'] }}</a>
                                 @endif

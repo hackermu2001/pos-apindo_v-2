@@ -322,11 +322,11 @@ class QuotationController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/quotation', $documentName);
+                $document->move('documents/quotation', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/quotation', $documentName);
+                $document->move('documents/quotation', $documentName);
             }
             $data['document'] = $documentName;
         }
@@ -720,11 +720,11 @@ class QuotationController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/quotation', $documentName);
+                $document->move('documents/quotation', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/quotation', $documentName);
+                $document->move('documents/quotation', $documentName);
             }
             $data['document'] = $documentName;
         }

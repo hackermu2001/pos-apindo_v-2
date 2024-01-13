@@ -407,11 +407,11 @@ class ReturnPurchaseController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/purchase_return', $documentName);
+                $document->move('documents/purchase_return', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/purchase_return', $documentName);
+                $document->move('documents/purchase_return', $documentName);
             }
             $data['document'] = $documentName;
         }
@@ -693,11 +693,11 @@ class ReturnPurchaseController extends Controller
             $documentName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $documentName = $documentName . '.' . $ext;
-                $document->move('public/documents/purchase_return', $documentName);
+                $document->move('documents/purchase_return', $documentName);
             }
             else {
                 $documentName = $this->getTenantId() . '_' . $documentName . '.' . $ext;
-                $document->move('public/documents/purchase_return', $documentName);
+                $document->move('documents/purchase_return', $documentName);
             }
             $data['document'] = $documentName;
         }
