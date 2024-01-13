@@ -71,11 +71,11 @@ class BillerController extends Controller
             $imageName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $imageName = $imageName . '.' . $ext;
-                $image->move('public/images/biller', $imageName);
+                $image->move('images/biller', $imageName);
             }
             else {
                 $imageName = $this->getTenantId() . '_' . $imageName . '.' . $ext;
-                $image->move('public/images/biller', $imageName);
+                $image->move('images/biller', $imageName);
             }
             $lims_biller_data['image'] = $imageName;
         }
@@ -129,11 +129,11 @@ class BillerController extends Controller
             $imageName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $imageName = $imageName . '.' . $ext;
-                $image->move('public/images/biller', $imageName);
+                $image->move('images/biller', $imageName);
             }
             else {
                 $imageName = $this->getTenantId() . '_' . $imageName . '.' . $ext;
-                $image->move('public/images/biller', $imageName);
+                $image->move('images/biller', $imageName);
             }
             $input['image'] = $imageName;
         }

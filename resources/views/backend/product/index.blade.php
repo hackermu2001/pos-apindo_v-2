@@ -60,7 +60,7 @@
         <div class="modal-body">
           <p class="italic"><small>{{trans('file.The field labels marked with * are required input fields')}}.</small></p>
            <p>{{trans('file.The correct column order is')}} (image, name*, code*, type*, brand, category*, unit_code*, cost*, price*, product_details, variant_name, item_code, additional_price) {{trans('file.and you must follow this')}}.</p>
-           <p>{{trans('file.To display Image it must be stored in')}} public/images/product {{trans('file.directory')}}. {{trans('file.Image name must be same as product name')}}</p>
+           <p>{{trans('file.To display Image it must be stored in')}} images/product {{trans('file.directory')}}. {{trans('file.Image name must be same as product name')}}</p>
            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">

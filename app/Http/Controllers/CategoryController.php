@@ -146,31 +146,31 @@ class CategoryController extends Controller
             $imageName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $imageName = $imageName . '.' . $ext;
-                $image->move('public/images/category', $imageName);
+                $image->move('images/category', $imageName);
             }
             else {
                 $imageName = $this->getTenantId() . '_' . $imageName . '.' . $ext;
-                $image->move('public/images/category', $imageName);
+                $image->move('images/category', $imageName);
             }
-            Image::make('public/images/category/'. $imageName)->fit(300, 300)->save();
+            Image::make('images/category/'. $imageName)->fit(300, 300)->save();
             $lims_category_data['image'] = $imageName;
         }
         $icon = $request->icon;
         if ($icon) {
-            if (!file_exists('public/images/category/icons/')) {
-                mkdir('public/images/category/icons/', 0755, true);
+            if (!file_exists('images/category/icons/')) {
+                mkdir('images/category/icons/', 0755, true);
             }
             $ext = pathinfo($icon->getClientOriginalName(), PATHINFO_EXTENSION);
             $iconName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $iconName = $iconName . '.' . $ext;
-                $icon->move('public/images/category/icons/', $iconName);
+                $icon->move('images/category/icons/', $iconName);
             }
             else {
                 $iconName = $this->getTenantId() . '_' . $iconName . '.' . $ext;
-                $icon->move('public/images/category/icons/', $iconName);
+                $icon->move('images/category/icons/', $iconName);
             }
-            Image::make('public/images/category/'. $iconName)->fit(100, 100)->save();
+            Image::make('images/category/'. $iconName)->fit(100, 100)->save();
             $lims_category_data['icon'] = $iconName;
         }
         $lims_category_data['name'] = $request->name;
@@ -229,20 +229,20 @@ class CategoryController extends Controller
             $imageName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $imageName = $imageName . '.' . $ext;
-                $image->move('public/images/category', $imageName);
+                $image->move('images/category', $imageName);
             }
             else {
                 $imageName = $this->getTenantId() . '_' . $imageName . '.' . $ext;
-                $image->move('public/images/category', $imageName);
+                $image->move('images/category', $imageName);
             }
-            Image::make('public/images/category/'. $imageName)->fit(100, 100)->save(); 
+            Image::make('images/category/'. $imageName)->fit(100, 100)->save(); 
             $input['image'] = $imageName;
         }
 
         $icon = $request->icon;
         if ($icon) {
-            if (!file_exists('public/images/category/icons/')) {
-                mkdir('public/images/category/icons/', 0755, true);
+            if (!file_exists('images/category/icons/')) {
+                mkdir('images/category/icons/', 0755, true);
             }
             $this->fileDelete('images/category/icons/', $lims_category_data->icon);
 
@@ -250,13 +250,13 @@ class CategoryController extends Controller
             $iconName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $iconName = $iconName . '.' . $ext;
-                $icon->move('public/images/category/icons/', $iconName);
+                $icon->move('images/category/icons/', $iconName);
             }
             else {
                 $iconName = $this->getTenantId() . '_' . $iconName . '.' . $ext;
-                $icon->move('public/images/category/icons/', $iconName);
+                $icon->move('images/category/icons/', $iconName);
             }
-            Image::make('public/images/category/icons/'. $iconName)->fit(100, 100)->save();            
+            Image::make('images/category/icons/'. $iconName)->fit(100, 100)->save();            
             $input['icon'] = $iconName;
         }
         if(!isset($request->featured) && \Schema::hasColumn('categories', 'featured') ){

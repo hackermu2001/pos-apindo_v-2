@@ -103,7 +103,7 @@
               <button type="button" data-dismiss="modal" aria-label="Close" class="close d-print-none" id="close-btn"><span aria-hidden="true"><i class="dripicons-cross"></i></span></button>
           </div>
           <div class="modal-body">
-              <div class="gift-card" style="margin: 0 auto; max-width: 350px; position: relative; color:#fff;"><img src="{{url('public/images/gift_card/front.jpg')}}" width="350" height="200">
+              <div class="gift-card" style="margin: 0 auto; max-width: 350px; position: relative; color:#fff;"><img src="{{url('images/gift_card/front.jpg')}}" width="350" height="200">
                 <div style="position: absolute; padding: 15px; top:0; left: 0; width: 350px;">
                     <h3 class="d-inline">Gift Card</h3><h3 class="d-inline float-right">{{$currency->code}} <span id="balance"></span></h3>
                     <p class="card-number" style="font-size: 28px;letter-spacing: 3px; margin-top: 15px;"></p>
@@ -114,9 +114,9 @@
               </div>
               <br>
               <div class="gift-card" style="margin: 0 auto; max-width: 350px; position: relative; color:#fff;">
-                <img src="{{url('public/images/gift_card/back.png')}}" width="350" height="200">
+                <img src="{{url('images/gift_card/back.png')}}" width="350" height="200">
                 <div class="site-title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">@if($general_setting->site_logo)
-                  <img src="{{url('public/logo', $general_setting->site_logo)}}" height="38px" width="38px">&nbsp;
+                  <img src="{{url('logo', $general_setting->site_logo)}}" height="38px" width="38px">&nbsp;
                   <span style="font-size: 25px;">@endif{{$general_setting->site_title}}</span>
                 </div>
               </div>

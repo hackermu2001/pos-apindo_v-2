@@ -122,7 +122,7 @@ class SettingController extends Controller
 
             $ext = pathinfo($logo->getClientOriginalName(), PATHINFO_EXTENSION);
             $logoName = date("Ymdhis") . '.' . $ext;
-            $logo->move('public/logo', $logoName);
+            $logo->move('logo', $logoName);
             $general_setting->site_logo = $logoName;
         }
         $general_setting->save();

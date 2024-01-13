@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-    <link rel="icon" type="image/png" href="{{url('public/logo', $general_setting->site_logo)}}" />
+    <link rel="icon" type="image/png" href="{{url('logo', $general_setting->site_logo)}}" />
     @if(!config('database.connections.saleprosaas_landlord'))
     <link rel="icon" type="image/png" href="{{url('logo', $general_setting->site_logo)}}" />
     <!-- Bootstrap CSS-->

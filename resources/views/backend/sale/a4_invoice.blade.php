@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/png" href="{{url('public/logo', $general_setting->site_logo)}}" />
+        <link rel="icon" type="image/png" href="{{url('logo', $general_setting->site_logo)}}" />
         <title>{{$lims_sale_data->customer->name.'_Sale_'.$lims_sale_data->reference_no}}</title>
         <style type="text/css">
             span,td {

@@ -99,11 +99,11 @@ class EmployeeController extends Controller
             $imageName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $imageName = $imageName . '.' . $ext;
-                $image->move('public/images/employee', $imageName);
+                $image->move('images/employee', $imageName);
             }
             else {
                 $imageName = $this->getTenantId() . '_' . $imageName . '.' . $ext;
-                $image->move('public/images/employee', $imageName);
+                $image->move('images/employee', $imageName);
             }
             $data['image'] = $imageName;
         }
@@ -154,11 +154,11 @@ class EmployeeController extends Controller
             $imageName = date("Ymdhis");
             if(!config('database.connections.saleprosaas_landlord')) {
                 $imageName = $imageName . '.' . $ext;
-                $image->move('public/images/employee', $imageName);
+                $image->move('images/employee', $imageName);
             }
             else {
                 $imageName = $this->getTenantId() . '_' . $imageName . '.' . $ext;
-                $image->move('public/images/employee', $imageName);
+                $image->move('images/employee', $imageName);
             }
             $data['image'] = $imageName;
         }
@@ -198,7 +198,7 @@ class EmployeeController extends Controller
         $this->fileDelete('images/employee/', $lims_employee_data->image);
 
         // if($lims_employee_data->image && !config('database.connections.saleprosaas_landlord')) {
-        //     unlink('public/images/employee/'.$lims_employee_data->image);
+        //     unlink('images/employee/'.$lims_employee_data->image);
         // }
         // elseif($lims_employee_data->image) {
         //     unlink('images/employee/'.$lims_employee_data->image);
