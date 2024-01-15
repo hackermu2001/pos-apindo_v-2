@@ -478,11 +478,7 @@
             </ul>
             </li>
             @endif
-            @if(!config('database.connections.saleprosaas_landlord'))
-            <li><a href="{{url('addon-list')}}" id="addon-list"> <i class="dripicons-flag"></i><span>{{trans('file.Addons')}}</span></a></li>
-            @if (\Schema::hasColumn('products', 'woocommerce_product_id'))
-                <li><a href="{{route('woocommerce.index')}}"> <i class="fa fa-wordpress"></i><span>WooCommerce</span></a></li>
-            @endif
+            
             @if(in_array('ecommerce',explode(',',$general_setting->modules)))
             <li><a href="#ecommerce" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-shopping-bag"></i><span>{{trans('file.ecommerce')}}</span></a>
                 <ul id="ecommerce" class="collapse list-unstyled ">

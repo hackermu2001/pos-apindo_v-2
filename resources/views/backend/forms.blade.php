@@ -509,7 +509,7 @@
                     </div>
                     <div class="line"></div>
                     <div class="form-group row">
-                      <label class="col-sm-2 form-control-label">Button addons</label>
+                      <label class="col-sm-2 form-control-label">Button </label>
                       <div class="col-sm-10">
                         <div class="form-group">
                           <div class="input-group">
