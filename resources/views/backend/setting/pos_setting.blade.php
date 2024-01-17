@@ -163,7 +163,7 @@
                                         @else
                                         <input class="mt-2" type="checkbox" name="options[]" value="card">
                                         @endif
-                                        <label class="mt-2"><strong>Card</strong></label>
+                                        <label class="mt-2"><strong>Qris</strong></label>
                                     </div>
 
                                     <div class="form-group d-inline">
@@ -172,7 +172,7 @@
                                         @else
                                         <input class="mt-2" type="checkbox" name="options[]" value="cheque">
                                         @endif
-                                        <label class="mt-2"><strong>Cheque</strong></label>
+                                        <label class="mt-2"><strong>Malltronik</strong></label>
                                     </div>
 
                                     <div class="form-group d-inline">
