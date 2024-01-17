@@ -315,7 +315,7 @@ function calculateTotal() {
             if(qty != actual_qty) {
                 changeSaleStatus = 0;
             }
-            if(qty > actual_qty) {
+            if(+qty > +actual_qty) {
                 alert('Quantity can not be bigger than the actual quantity!');
                 qty = actual_qty;
                 $('table.order-list tbody tr:nth-child(' + (i + 1) + ') .qty').val(actual_qty);

@@ -285,7 +285,7 @@ function calculateTotal() {
         if ($(this).is(":checked")) {
             var actual_qty = $('table.order-list tbody tr:nth-child(' + (i + 1) + ') .actual-qty').val();
             var qty = $('table.order-list tbody tr:nth-child(' + (i + 1) + ') .qty').val();
-            if(qty > actual_qty) {
+            if(+qty > +actual_qty) {
                 alert('Quantity can not be bigger than the actual quantity!');
                 qty = actual_qty;
                 $('table.order-list tbody tr:nth-child(' + (i + 1) + ') .qty').val(actual_qty);
