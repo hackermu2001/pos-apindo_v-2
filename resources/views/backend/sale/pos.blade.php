@@ -396,10 +396,10 @@
                                                 <option value="2">Gift Card</option>
                                                 @endif
                                                 @if(in_array("card",$options))
-                                                <option value="3">Credit Card</option>
+                                                <option value="3">Qris</option>
                                                 @endif
                                                 @if(in_array("cheque",$options))
-                                                <option value="4">Cheque</option>
+                                                <option value="4">Maltronik</option>
                                                 @endif
                                                 @if(in_array("paypal",$options) && (strlen(env('PAYPAL_LIVE_API_USERNAME'))>0) && (strlen(env('PAYPAL_LIVE_API_PASSWORD'))>0) && (strlen(env('PAYPAL_LIVE_API_SECRET'))>0))
                                                 <option value="5">Paypal</option>
