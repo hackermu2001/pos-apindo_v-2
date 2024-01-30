@@ -447,12 +447,14 @@
                                 </div>
                                 <div class="col-md-2 qc" data-initial="1">
                                     <h4><strong>{{trans('file.Quick Cash')}}</strong></h4>
+                                    <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="500" type="button">500</button>
+                                    <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="1000" type="button">1.000</button>
+                                    <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="2000" type="button">2.000</button>
+                                    <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="5000" type="button">5.000</button>
                                     <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="10000" type="button">10.000</button>
                                     <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="20000" type="button">20.000</button>
                                     <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="50000" type="button">50.000</button>
                                     <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="100000" type="button">100.000</button>
-                                    <!-- <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="500" type="button">500</button>
-                                    <button class="btn btn-block btn-primary qc-btn sound-btn" data-amount="1000" type="button">1000</button> -->
                                     <button class="btn btn-block btn-danger qc-btn sound-btn" data-amount="0" type="button">{{trans('file.Clear')}}</button>
                                 </div>
                             </div>
