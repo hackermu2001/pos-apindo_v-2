@@ -8,9 +8,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-    <link rel="icon" type="image/png" href="{{url('logo', $general_setting->site_logo)}}" />
+    <link rel="icon" type="image/png" href=""/>
     @if(!config('database.connections.saleprosaas_landlord'))
-    <link rel="icon" type="image/png" href="{{url('logo', $general_setting->site_logo)}}" />
+    <link rel="icon" type="image/png" href=""/>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="<?php echo asset('vendor/bootstrap/css/bootstrap.min.css') ?>" type="text/css">
     <!-- login stylesheet-->
